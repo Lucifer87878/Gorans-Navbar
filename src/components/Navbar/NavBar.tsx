@@ -2,7 +2,15 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.scss";
 
-function Navbar() {
+interface NavLink {
+  Text: string;
+  href: string;
+}
+interface Props {
+  GoToNavLink: NavLink[];
+}
+
+function Navbar({ GoToNavLink }: Props) {
   const navRef = useRef<HTMLDivElement>(null);
   
 
@@ -12,21 +20,14 @@ function Navbar() {
     }
   };
 
-  const GoToNavLink = [
-    {Text: "Home", href:"/#"},
-    {Text: "About oss", href:"/#"},
-    {Text: "Contakt oss", href:"/#"},
-    {Text: "Different services", href:"/#"},
-    {Text: "Cooperate with oss", href:"/#"}
-  ]
-
+  
   return (
     <section className="NavBar">
       <header>
         <h3>Logo</h3>
         <nav ref={navRef}>
-            {GoToNavLink.map((GoToNavLink, index) =>(
-                <a key={index} href={GoToNavLink.href}>{GoToNavLink.Text}</a>
+            {GoToNavLink.map((NavLink, index) =>(
+                <a key={index} href={NavLink.href}>{NavLink.Text}</a>
             ))}
           <button className="nav-btn nav-close-btn" onClick={showNav}>
             <FaTimes />
