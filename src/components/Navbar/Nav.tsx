@@ -1,13 +1,3 @@
-// Information om man vill andvända alla ikåner somm är tängt till denna Navbar 
-// så behöver man instalera en pach  som är 
-
-// npm install react-icons
-
-// inportera sen från följande länk
-// import { FaBars, FaTimes } from "react-icons/fa";
-
-
-
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Nav.css"
