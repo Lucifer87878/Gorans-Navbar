@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar/NavBar';
+import Card from './components/Cards/Card';
 
 const GoToNavLink = [
   { Text: 'Home', href: '/#' },
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <Navbar GoToNavLink={GoToNavLink} />
+      <Card />
     </>
   );
 }
