@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaReact } from "react-icons/fa";
 import "./NavBar.scss";
 
 interface NavLink {
@@ -24,7 +24,7 @@ function Navbar({ GoToNavLink }: Props) {
   return (
     <section className="NavBar">
       <header>
-        <h3>Logo</h3>
+        <h3><FaReact /></h3>
         <nav ref={navRef}>
             {GoToNavLink.map((NavLink, index) =>(
                 <a key={index} href={NavLink.href}>{NavLink.Text}</a>
