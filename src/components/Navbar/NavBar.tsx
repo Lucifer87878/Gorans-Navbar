@@ -1,37 +1,37 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "./Nav.css"
-
+import "./NavBar.scss";
 
 function Navbar() {
-    const navRef = useRef<HTMLDivElement>(null);
+  const navRef = useRef<HTMLDivElement>(null);
 
-    const showNav = () => {
-        if (navRef.current) {
-            navRef.current.classList.toggle("responsive_nav");
-        }
+  const showNav = () => {
+    if (navRef.current) {
+      navRef.current.classList.toggle("responsive_nav");
     }
+  };
 
-    return (
-        <header className="NavBar">
-            <h3>Logo</h3>
-            <nav ref={navRef}>
-                <a href="/#">Home</a>
-                <a href="/#">About oss</a>
-                <a href="/#">Contakt oss</a>
-                <a href="/#">different services</a>
-                <a href="/#">Cooperate with oss</a>
-                <button className="nav-btn nav-close-btn" onClick={showNav}>
-                    <FaTimes />
-                </button>
-            </nav>
-            <button className="nav-btn" onClick={showNav}>
-                <FaBars />  
-                {/* detta är icon för när det är små skärmar */}
-            </button>
-        </header>
-    );
-    
+  return (
+    <section className="NavBar">
+      <header>
+        <h3>Logo</h3>
+        <nav ref={navRef}>
+          <a href="/#">Home</a>
+          <a href="/#">About oss</a>
+          <a href="/#">Contakt oss</a>
+          <a href="/#">different services</a>
+          <a href="/#">Cooperate with oss</a>
+          <button className="nav-btn nav-close-btn" onClick={showNav}>
+            <FaTimes />
+          </button>
+        </nav>
+        <button className="nav-btn" onClick={showNav}>
+          <FaBars />
+          {/* detta är icon för när det är små skärmar */}
+        </button>
+      </header>
+    </section>
+  );
 }
 
 export default Navbar;
