@@ -4,6 +4,7 @@ import "./NavBar.scss";
 
 function Navbar() {
   const navRef = useRef<HTMLDivElement>(null);
+  
 
   const showNav = () => {
     if (navRef.current) {
@@ -11,16 +12,22 @@ function Navbar() {
     }
   };
 
+  const GoToNavLink = [
+    {Text: "Home", href:"/#"},
+    {Text: "About oss", href:"/#"},
+    {Text: "Contakt oss", href:"/#"},
+    {Text: "Different services", href:"/#"},
+    {Text: "Cooperate with oss", href:"/#"}
+  ]
+
   return (
     <section className="NavBar">
       <header>
         <h3>Logo</h3>
         <nav ref={navRef}>
-          <a href="/#">Home</a>
-          <a href="/#">About oss</a>
-          <a href="/#">Contakt oss</a>
-          <a href="/#">different services</a>
-          <a href="/#">Cooperate with oss</a>
+            {GoToNavLink.map((GoToNavLink, index) =>(
+                <a key={index} href={GoToNavLink.href}>{GoToNavLink.Text}</a>
+            ))}
           <button className="nav-btn nav-close-btn" onClick={showNav}>
             <FaTimes />
           </button>
