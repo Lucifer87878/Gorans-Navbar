@@ -61,7 +61,7 @@
       input:checked ~ label {
         opacity: 0;
         transform: scale(.8);
-        box-shadow: 0 0 0 30px rgb(0 0 0 / 10%);
+        box-shadow: 0 0 0 30px var(--custom-black-color);
         transition: opacity .2s 1s, transform 1s, box-shadow 1s;
       }
   
@@ -73,7 +73,7 @@
         padding: 20px 25px;
         margin: auto;
         border-radius: 40px;
-        background-color: rgb(255 255 255 / 50%);
+        background-color: var(--translucent-White);
         width: 100px;
         opacity: 0;
         transition: width .3s, opacity .2s;
@@ -93,7 +93,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        color: #fff;
+        color: var(--icon-color);
         transition: transform .3s;
       }
   
