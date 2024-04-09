@@ -1,5 +1,6 @@
 @import "../src/components/Navbar/NavBar.scss";
 @import "../src/components/Cards/Cards.scss";
+@import "../src/components/Buttens/buttens.scss";
 
 *{
   padding: 0;
@@ -13,4 +14,15 @@
   --mainColorLight: #5767aa;
   --secenderyColor: #DB2B39;
   --textColor: gray;
+
+  /* ----------socialLinks colors------------ */
+    --twitter-color: #1da1f2;
+    --facebook-color: #3b5998;
+    --close-color: #000;
+    --dribbble-color: #ea4c89;
+    --whatsapp-color: #25d366;
+    --gradient-start-color: #ff512f;    
+    --gradient-end-color: #dd2476;    
+    --icon-color: #fff;  
+
 }
