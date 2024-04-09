@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/NavBar';
 import ShareButton from './components/Buttens/buttens';
 // import Card from './components/Cards/Card';
 
-
+//-------------------------------------------NavBar-----------------------------------------------//
 const GoToNavLink = [
   { Text: 'Home', href: '/#' },
   { Text: 'About oss', href: '/#' },
@@ -11,6 +11,10 @@ const GoToNavLink = [
   { Text: 'Different services', href: '/#' },
   { Text: 'Cooperate with oss', href: '/#' }
 ];
+
+//------------------------------------------------------------------------------------------//
+
+//-------------------------------------Social Media Butten's---------------------------------------//
 
 const socialLinks = [
   { className: "twitter", icon: "ri-twitter-line", href: "#" },
@@ -20,7 +24,7 @@ const socialLinks = [
   { className: "whatsapp", icon: "ri-whatsapp-line", href: "#" }
 ];
 
-
+//------------------------------------------------------------------------------------------//
 
       
 function App() {
