@@ -1,4 +1,4 @@
-import './App.css';
+import '../src/components/Scss/main.scss';
 import Navbar from './components/Navbar/NavBar';
 import ShareButton from './components/Buttens/buttens';
 // import Card from './components/Cards/Card';

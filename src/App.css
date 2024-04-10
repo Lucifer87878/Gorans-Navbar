@@ -1,4 +1,4 @@
-@import "../src/components/Navbar/NavBar.scss";
+/* @import "../src/components/Navbar/NavBar.scss";
 @import "../src/components/Cards/Cards.scss";
 @import "../src/components/Buttens/buttens.scss";
 
@@ -7,23 +7,23 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
-}
+} */
 
-:root {
-  --mainColor: #29335C;
-  --mainColorLight: #5767aa;
-  --secenderyColor: #DB2B39;
-  --textColor: gray;
+/* :root {
+  $--mainColor: #29335C;
+  $--mainColorLight: #5767aa;
+  $--secenderyColor: #DB2B39;
+  $--textColor: gray;
 
   /* ----------socialLinks colors------------ */
-    --twitter-color: #1da1f2;
-    --facebook-color: #3b5998;
-    --close-color: #000;
-    --dribbble-color: #ea4c89;
-    --whatsapp-color: #25d366;
-    --gradient-start-color: #ff512f;    
-    --gradient-end-color: #dd2476;    
-    --icon-color: #fff;  
-    --custom-black-color: rgba(0, 0, 0, 0.1);
-    --translucent-White: rgba(255, 255, 255, 0.5);
-}
+  /* $--twitter-color: #1da1f2;
+  $--facebook-color: #3b5998;
+  $--close-color: #000;
+  $--dribbble-color: #ea4c89;
+  $--whatsapp-color: #25d366;
+  $--gradient-start-color: #ff512f;    
+  $--gradient-end-color: #dd2476;    
+  $--icon-color: #fff;  
+  $--custom-black-color: rgba(0, 0, 0, 0.1);
+  $--translucent-White: rgba(255, 255, 255, 0.5);
+} */
