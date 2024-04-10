@@ -1,6 +1,7 @@
 import '../src/components/Scss/main.scss';
 import Navbar from './components/Navbar/NavBar';
 import ShareButton from './components/Buttens/buttens';
+import { DragAndDrop } from './components/DragDrop/DragAndDrop';
 // import Card from './components/Cards/Card';
 
 //-------------------------------------------NavBar-----------------------------------------------//
@@ -26,12 +27,13 @@ const socialLinks = [
 
 //------------------------------------------------------------------------------------------//
 
-      
+
 function App() {
   return (
     <>
       <Navbar GoToNavLink={GoToNavLink} />
       <ShareButton socialLinks={socialLinks} />
+      <DragAndDrop />
       {/* <Card /> */}
     </>
   );
