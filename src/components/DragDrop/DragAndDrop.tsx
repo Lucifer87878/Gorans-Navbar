@@ -64,3 +64,5 @@ export const DragAndDrop = () => {
         </>
     )
 }
+
+export default DragAndDrop;
