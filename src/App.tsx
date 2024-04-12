@@ -1,6 +1,6 @@
 import '../src/components/Scss/main.scss';
 import Navbar from './components/Navbar/NavBar';
-import ShareButton from './components/Buttens/ShareButton';
+import ShareButton from './components/ShareButton/ShareButton';
 import DragAndDrop from './components/DragDrop/DragAndDrop';
 import Card from './components/Cards/Card';
 
