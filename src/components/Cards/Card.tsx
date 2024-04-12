@@ -1,4 +1,5 @@
 import CardPic1 from "../img/Card1.jpg";
+import './Cards.scss';
 
 function Card() {
     return (
