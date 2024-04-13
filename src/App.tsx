@@ -1,16 +1,18 @@
-import '../src/components/Scss/main.scss';
-import Navbar from './components/Navbar/NavBar';
-import ShareButton from './components/ShareButton/ShareButton';
-import DragAndDrop from './components/DragDrop/DragAndDrop';
-import Card from './components/Cards/Card';
+import "../src/components/Scss/main.scss";
+import Navbar from "./components/Navbar/NavBar";
+import ShareButton from "./components/ShareButton/ShareButton";
+import DragAndDrop from "./components/DragDrop/DragAndDrop";
+import Card from "./components/Cards/Card";
+import Header from "./components/Header/Header";
+import Form from "./components/Form/Form";
 
 //-------------------------------------------NavBar-----------------------------------------------//
 const GoToNavLink = [
-  { Text: 'Home', href: '/#' },
-  { Text: 'About oss', href: '/#' },
-  { Text: 'Contakt oss', href: '/#' },
-  { Text: 'Different services', href: '/#' },
-  { Text: 'Cooperate with oss', href: '/#' }
+  { Text: "Home", href: "/#" },
+  { Text: "About oss", href: "/#" },
+  { Text: "Contakt oss", href: "/#" },
+  { Text: "Different services", href: "/#" },
+  { Text: "Cooperate with oss", href: "/#" },
 ];
 
 //------------------------------------------------------------------------------------------//
@@ -20,13 +22,12 @@ const GoToNavLink = [
 const socialLinks = [
   { className: "twitter", icon: "ri-twitter-line", href: "#" },
   { className: "facebook", icon: "ri-facebook-line", href: "#" },
-  { className: "close", icon: "ri-close-line", href: "#" }, // För att stänga knap menyn 
+  { className: "close", icon: "ri-close-line", href: "#" }, // För att stänga knap menyn
   { className: "discord", icon: "ri-discord-line", href: "#" },
-  { className: "whatsapp", icon: "ri-whatsapp-line", href: "#" }
+  { className: "whatsapp", icon: "ri-whatsapp-line", href: "#" },
 ];
 
 //------------------------------------------------------------------------------------------//
-
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
       <ShareButton socialLinks={socialLinks} />
       <DragAndDrop />
       <Card />
+      <Header />
+      <Form />
     </>
   );
 }
